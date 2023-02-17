@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/**
+* main - Entry point
+* Description: 'tell either positive or negative'
+* Return: Always 0 (Success)
+*/
 
-/* this code will tell whether the random number generated is either positive or negative */
 int main(void)
-
 {
 	int n;
 
