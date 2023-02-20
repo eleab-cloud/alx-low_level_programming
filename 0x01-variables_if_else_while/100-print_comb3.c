@@ -15,11 +15,12 @@ int main(void)
 	{
 		for (j = 1; j < 10 ; j++)
 		{
-			if ( i < j )
+			if (i < j)
 			{
 				putchar (48 + i);
 				putchar (48 + j);
-				if (i != 8 )
+				if (i != 8)
+
 				{
 					putchar (',');
 					putchar (' ');
