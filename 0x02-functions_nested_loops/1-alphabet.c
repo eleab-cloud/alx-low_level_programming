@@ -2,10 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Entry point
-* Description: 'prints alphabet a to z'
-* Return: Always 0 (Success)
+* print_alphabet - 'prints alphabet a to z'
 */
+
 void print_alphabet(void)
 {
 	char i;
