@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  *print_sign - check if a char is alphabet or not
