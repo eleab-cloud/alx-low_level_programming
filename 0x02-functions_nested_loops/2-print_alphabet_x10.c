@@ -1,17 +1,10 @@
+#include "main.h"
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Entry point
-* Description: 'main function'
-* Return: Always 0 (Success)
+* print_alphabet_x10 - print the alphabet 10 times
 */
-void print_alphabet_x10(void);
 
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
 void print_alphabet_x10(void)
 {
 	char i;
@@ -21,8 +14,8 @@ void print_alphabet_x10(void)
 	{
 		for (i = 'a'; i <= 'z'; i++)
 		{
-			putchar (i);
+			_putchar (i);
 		}
-		putchar ('\n');
+		_putchar ('\n');
 	}
 }
