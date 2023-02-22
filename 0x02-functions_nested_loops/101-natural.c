@@ -14,7 +14,7 @@ int main(void)
 		y = i % 5;
 		if (x == 0 || y == 0)
 		{
-			s = x + y;
+			s = i;
 		}
 		j = j + s;
 	}
