@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * times_table - print time table
+ * times_table - print time tabile
  *
  * Return:no return
  */
@@ -17,7 +17,6 @@ void times_table(void)
 			_putchar(i * j + '0');
 			_putchar(',');
 			_putchar(' ');
-			_putchar('\n');
 		}
 		_putchar('\n');
 	}
