@@ -5,20 +5,19 @@
  */
 int main(void)
 {
-	int i, x,  y;
-	int j;
+	int i, x, y, s;
+	int j = 0;
 
 	for (i = 0; i < 1024; i++)
 	{
 		x = i % 3;
 		y = i % 5;
-		j = 0;
-
 		if (x == 0 || y == 0)
 		{
-			j = x + y;
+			s = x + y;
 		}
+		j = j + s;
 	}
-	printf('%d\n', j);
+	printf("%d\n", j);
 	return (0);
 }
