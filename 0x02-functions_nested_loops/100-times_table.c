@@ -15,9 +15,9 @@ void print_times_table(int n)
 
 	if (n < 16 && n >= 0)
 	{
-		for (i = 0; i < q; i++)
+		for (i = 0; i < n; i++)
 		{
-			for (j = 0; j < q; j++)
+			for (j = 0; j < n; j++)
 			{
 				x = i * j;
 
