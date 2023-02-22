@@ -16,6 +16,10 @@ int main(void)
 		{
 			s = i;
 		}
+		else if (x != 0 && y != 0)
+		{
+			s = 0;
+		}
 		j = j + s;
 	}
 	printf("%d\n", j);
