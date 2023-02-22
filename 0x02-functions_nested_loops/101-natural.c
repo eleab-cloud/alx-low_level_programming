@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int i, x. y;
+	int i, x,  y;
 	int j;
 
 	for (i = 0; i < 1024; i++)
