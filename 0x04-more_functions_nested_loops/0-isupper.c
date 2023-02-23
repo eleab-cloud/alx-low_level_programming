@@ -2,20 +2,22 @@
 #include <stdio.h>
 
 /**
- * _isupper: tells whether a character is upper case or lower
- * @c: the inpput argument
+ * _isupper - tells whether a character is upper case or lower case
+ * @c: the input argument to be checked
  * Return: 1 if uper and 0 if lower
  */
 
 int _isupper(int c)
 {
-	int c;
+	char ch;
 
-	if (c >= 'A' && c <= 'Z')
+	ch = 'c';
+
+	if (ch >= 'A' && ch <= 'Z')
 	{
 		return (1);
 	}
-	else if (c >= 'a' && c <= 'z')
+	else if (ch >= 'a' && ch <= 'z')
 	{
 		return (0);
 	}
