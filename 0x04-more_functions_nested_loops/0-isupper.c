@@ -5,7 +5,6 @@
  * @c: the input argument to be checked
  * Return: 1 if uper and 0 if lower
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
