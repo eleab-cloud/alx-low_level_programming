@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _isupper - tells whether a character is upper case or lower case
  * @c: the input argument to be checked
