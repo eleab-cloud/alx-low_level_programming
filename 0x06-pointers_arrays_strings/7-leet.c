@@ -16,7 +16,7 @@ char *leet(char *n)
 		{
 			if (n[i] == c[j])
 			{
-				n[i] = nu[j]
+				n[i] = nu[j];
 			}
 		}
 	}
