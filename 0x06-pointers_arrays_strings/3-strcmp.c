@@ -5,7 +5,7 @@
  *  @s2: the second string
  *  Return: o if equal 15 or -15 if greater or less
  */
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int r = 0;
 
