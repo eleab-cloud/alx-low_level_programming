@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *  *_strncat- concatinate two strings
+ *  *_strncpy- copy
  *  @dest: one string
  *  @src: the second string
- *  @n: teh atmost byte
+ *  @n: the char
  *  Return: pointer
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int s = 0;
 
