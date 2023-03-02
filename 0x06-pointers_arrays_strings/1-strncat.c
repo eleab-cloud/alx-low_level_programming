@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- *  *_strcat- concatinate two strings
+ *  *_strncat- concatinate two strings
  *  @dest: one string
  *  @src: the second string
+ *  @n: teh atmost byte
  *  Return: pointer
  */
-char  *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int r = 0;
 
