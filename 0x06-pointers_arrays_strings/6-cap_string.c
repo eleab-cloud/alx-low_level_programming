@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *  *string_toupper- change every lower to upper case
+ *  *cap_string- change every lower to upper case
  *  @n: the tring
  *  Return: pointer
  */
-char *cap_string(char *)
+char *cap_string(char *n)
 {
 	int i = 0;
 
