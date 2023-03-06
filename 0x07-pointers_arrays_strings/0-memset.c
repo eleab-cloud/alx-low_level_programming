@@ -7,6 +7,7 @@
  * @b: the constant char
  * Return: the pointer
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
