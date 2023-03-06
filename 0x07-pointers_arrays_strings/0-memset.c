@@ -5,15 +5,16 @@
  * @n: the n bytes of s
  * @s: the array
  * @b: the constant char
- * Return: a pointer
+ * Return: the pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < n; i++)
+	for (; n > 0; i++)
 	{
 		s[i] = b;
+		n--;
 	}
 	return (s);
 }
