@@ -1,21 +1,28 @@
 #include "main.h"
 
 /**
- * print_chessboard- fills n bytes of s  with b
+ * print_diagsums- fills n bytes of s  with b
  * @a: the array pointer
+ * @size: size of the square array
  * Return: nothing
  */
 
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i;
+	int j = 0;
+	int sum = 0;
+	int sum1 = 0;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < 8; j++)
-		{
-			_putchar(a[i][j]);
-		}
-		 _putchar('\n');
+		sum = sum + a[i][i];
 	}
+	for (i = 0; i < size; i++)
+	{
+		sum1 = sum1 + a[i][size - 1];
+		size--;
+	}
+	printf("%d, ", sum);
+	printf("%d", sum1);
 }
