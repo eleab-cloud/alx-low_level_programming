@@ -4,6 +4,7 @@
  * @n: is the number
  * Return: 1 if prime and 0 if not
  */
+int realp(int nu, int i);
 int is_prime_number(int n)
 {
 	int r;
