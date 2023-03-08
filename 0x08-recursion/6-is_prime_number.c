@@ -7,8 +7,6 @@
 int realp(int nu, int i);
 int is_prime_number(int n)
 {
-	int r;
-
 	if (n <= 1)
 	{
 		return (0);
@@ -30,7 +28,7 @@ int realp(int nu, int i)
 	{
 		return (1);
 	}
-	else if (n % i == 0 && i > 1)
+	else if (nu % i == 0 && i > 1)
 	{
 		return (0);
 	}
