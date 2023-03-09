@@ -1,5 +1,5 @@
 #include "main.h"
-int sqrt(int n, int i);
+int sqrt1(int n, int i);
 
 /**
  * _sqrt_recursion- tells whether prime nmber or not
@@ -14,17 +14,17 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (sqrt(n, 0));
+		return (sqrt1(n, 0));
 	}
 }
 
 /**
- * sqrt- the real prime
+ * sqrt1- the real sqrt
  * @n: the number whose prime is needed
  * @i: counter
  * Return: i or -1
  */
-int sqrt(int n, int i)
+int sqrt1(int n, int i)
 {
 	if (i * i > n)
 	{
@@ -36,6 +36,6 @@ int sqrt(int n, int i)
 	}
 	else
 	{
-		return (sqrt(n, (i + 1)));
+		return (sqrt1(n, (i + 1)));
 	}
 }
