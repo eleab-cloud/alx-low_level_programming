@@ -8,13 +8,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, size1, size2;
+	int size1, size2;
 
 	char *ns;
 
-	size1 = 0;
-
-	size2 = 0;
+	size1 = size2 = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -34,16 +32,19 @@ char *str_concat(char *s1, char *s2)
 
 		return (NULL);
 
-	for (i = 0; i <= size1; i++)
+	size1 = size2 = 0;
+
+	while (s1[size1] != '\0')
 	{
-		ns[i] = s1[i];
+		ns[size1] = s1[size1];
+		size1;
 	}
-	for (i = size1 + 1; s2[size2]; i++)
+	while (s2[size2] != '\0')
 	{
-		ns[i] = s2[size2];
-		size2++;
+		ns[size1] = s2[size2];
+		size2++, size1++;
 	}
-	ns[i] = '\0';
+	ns[size1] = '\0';
 
 	return (ns);
 }
