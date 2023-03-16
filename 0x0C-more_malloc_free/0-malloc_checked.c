@@ -1,4 +1,5 @@
 #include <stdio>
+#include <stdlib>
 /**
  * malloc_checked- that allocates memory
  * @b: size
