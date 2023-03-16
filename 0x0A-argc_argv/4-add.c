@@ -15,7 +15,7 @@ int isnumber(char *c)
 
 	while (*c != '\0')
 		len = len++;
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	{
 		if (!isdigit(c[i]))
 		{
@@ -42,12 +42,15 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (!isnumber(argv[i]))
+		if (isnumber(argv[i]))
+		{
+			result = result + atoi(argv[i]);
+		}
+		else
 		{
 			printf("Error\n");
 			return (1);
 		}
-		result = result + atoi(argv[i]);
 	}
 	printf("%d\n", result);
 	return (0);
