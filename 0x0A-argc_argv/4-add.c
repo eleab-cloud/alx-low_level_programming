@@ -1,29 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
-/**
- * isnumber- intrance
- * @c:string
- * Return: always zero
- */
-int isnumber(char *c)
-{
-	int len = 0;
-
-	int i;
-
-	while (*c != '\0')
-		len++;
-	for (i = 0; i < len; i++)
-	{
-		if (!isdigit(c[i]))
-		{
-			return (0);
-		}
-	}
-	return (1);
-}
+int isnumber(char *c);
 /**
  * main- intrance
  * @argc: one arg
@@ -54,4 +32,26 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", result);
 	return (0);
+}
+/**
+ * isnumber- intrance
+ * @c:string
+ * Return: always zero
+ */
+int isnumber(char *c)
+{
+	int len = 0;
+
+	int i;
+
+	while (*c != '\0')
+		len++;
+	for (i = 0; i < len; i++)
+	{
+		if (!isdigit(c[i]))
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
