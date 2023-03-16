@@ -14,15 +14,15 @@ int isnumber(char *c)
 	int i;
 
 	while (*c != '\0')
-		len = len++;
+		len++;
 	for (i = 0; i < len; i++)
 	{
 		if (!isdigit(c[i]))
 		{
 			return (0);
 		}
-		return (1);
 	}
+	return (1);
 }
 /**
  * main- intrance
