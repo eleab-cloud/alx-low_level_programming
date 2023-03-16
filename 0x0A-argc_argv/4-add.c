@@ -17,10 +17,11 @@ int isnumber(char *c)
 		len = len++;
 	for (i = 0; i <= len; i++)
 	{
-		if (isdigit(c[i] == 0))
+		if (!isdigit(c[i]))
 		{
 			return (0);
 		}
+		return (1);
 	}
 }
 /**
@@ -41,7 +42,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (isnumber(argv[i]) == 0)
+		if (!isnumber(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
