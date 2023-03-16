@@ -9,11 +9,11 @@
  */
 int isnumber(char *c)
 {
-	int len == 0;
+	int len = 0;
 
 	int i;
 
-	while (c != '\0')
+	while (*c != '\0')
 		len = len++;
 	for (i = 0; i <= len; i++)
 	{
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		result = result + argv[i];
+		result = result + atoi(argv[i]);
 	}
 	printf("%d\n", result);
 	return (0);
