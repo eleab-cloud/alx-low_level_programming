@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
 		{
 			printf("Error\n");
 			return (1);
-			break;
 		}
 	}
 	num1 = atoi(argv[1]);
