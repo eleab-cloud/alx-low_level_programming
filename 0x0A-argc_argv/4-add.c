@@ -1,6 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
+/**
+ * isnumber- intrance
+ * @c:string
+ * Return: always zero
+ */
+int isnumber(char *c)
+{
+	int len == 0;
+
+	int i;
+
+	while (c != '\0')
+		len = len++;
+	for (i = 0; i <= len; i++)
+	{
+		if (isdigit(c[i] == 0))
+		{
+			return (0);
+		}
+	}
+}
 /**
  * main- intrance
  * @argc: one arg
@@ -9,24 +31,23 @@
  */
 int main(int argc, char *argv[])
 {
-	int result, num1, num2;
+	int result = 0;
+
+	int i;
 
 	if (argc == 1)
 	{
 		printf("0\n");
 	}
-	for (argc = 1; argc < 3; argc++)
+	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[argc]) == 0)
+		if (isnumber(argv[i]) == 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
+		result = result + argv[i];
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 + num2;
-
 	printf("%d\n", result);
 	return (0);
 }
