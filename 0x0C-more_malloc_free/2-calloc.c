@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void *setoo(char *pter,char  b, int size);
+void *setoo(char *pter, char  b, int size);
 /**
  * _calloc- that allocates memory
  * @nmemb:no of elements of array
