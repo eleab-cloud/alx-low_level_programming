@@ -9,7 +9,7 @@ int *setoo(int *pter, int b, int size);
  */
 int *array_range(int min, int max)
 {
-	if (min >= max)
+	if (min > max)
 	{
 		return (NULL);
 	}
