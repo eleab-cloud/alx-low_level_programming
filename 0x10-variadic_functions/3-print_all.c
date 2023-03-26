@@ -30,10 +30,10 @@ void print_all(const char * const format, ...)
 					printf("%s%i", separ, va_arg(args, int));
 					break;
 				case 'f':
-					printf("%s%f", separ, var_arg(args, double));
+					printf("%s%f", separ, va_arg(args, double));
 					break;
 				case 's':
-					str = var_arg(args, char *);
+					str = va_arg(args, char *);
 					if (!str)
 						str = "(nil)";
 					printf("%s%s", separ, str);
