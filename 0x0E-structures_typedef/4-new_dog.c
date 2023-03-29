@@ -1,33 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-
-/**
- * new_dog- create new dog
- * @name: arg1
- * @age: arg2
- * @owner: arg3
- * Return: a pointer
- */
-dog_t *new_dog(char *name, float age, char *owner)
-{
-	dog_t *dog;
-	int l1, l2;
-
-	dog = malloc(sizeof(dog_t));
-
-	if (dog == NULL)
-		return (NULL);
-
-	l1 = stlen(name);
-	k2 = stlen(owner);
-
-	dog->name = stco(name, l1);
-	dog->owner = stcp(owner, l2);
-	dog->age = age;
-
-	return (dog);
-}
+int stlen(char *st);
+char *_strcpy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
 /**
  * stlen- length of string
  * @st: the string
@@ -75,7 +51,7 @@ char *_strcpy(char *dest, char *src)
  * @owner: arg3
  * Return: pointer for new dog
  */
-dot_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int l1, l2;
