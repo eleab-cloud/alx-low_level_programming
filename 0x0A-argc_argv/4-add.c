@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 int isnumber(char *c);
 /**
  * main- intrance
@@ -44,15 +45,13 @@ int isnumber(char *c)
 {
 	unsigned int len = 0;
 
-	int i;
-
 	while (len < strlen(c))
 	{
-		if (!isdigit(c[count]))
+		if (!isdigit(c[len]))
 		{
 			return (0);
 		}
-		count++;
+		len++;
 	}
 	return (1);
 }
