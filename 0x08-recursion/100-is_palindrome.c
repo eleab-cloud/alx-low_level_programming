@@ -1,66 +1,41 @@
 #include "main.h"
-int leng(char *s);
-char *_retrev(char *s, int n);
-int compstr(char *s1, char *s2)
+int check_pal(char *s, int i, int len);
+int _strlen_recursion(char *s);
 
 /**
  * is_palindrome- tells whether prime nmber or not
- * @n: is the number
+ * @s: is the string
  * Return: 1 if true  and 0 if false
  */
 int is_palindrome(char *s)
 {
-	int l = leng(s);
-	char *revptr = _retrev(s);
-	int comp = compstr(s, revptr);
-
-	return (comp);
+	if (*s == 0)
+		return (1);
+	return (check_pal(s, 0, _strlen_recursion(s)));
 }
-
 /**
- * realp- the real prime
- * @nu: the number whose prime is needed
- * @i: counter
- * Return: 1 or 0
+ * _strlen_recursion- strlength
+ * @s: the arg
+ * Return: length
  */
-int leng(char *s)
+int _strlen_recursion(char *s)
 {
-        int l = 1;
-        if (*s != '\0')
-        {
-                l = l++;
-        }
-        return (l);
-}
-char *_retrev(char *s, int n)
-{
-	char r;
-	char *ptr;
-	int i = 0;
-
-	if (*s != '\0')
-	{
-		r[n - 1] = s[i];
-		*_retrev(s[i + 1], n - 1);
-	}
-	ptr = &r;
-
-	return (ptr);
-}
-int compstr(char *s1, char *s2)
-{
-	int i = 0;
-	
-	if (*s1 != '\0' && *s2 != '\0')
-	{
-		if (s1[i] != s2[i])
-		{
+	if (*s == '\0')
 		return (0);
-		}
-		else
-		{
-		compstr(s1[i + 1], s2[i + 1];
-		}
-	}
-	return (1);
+	return (1 + _strlen_recursion(s + 1));
+}
+/**
+ * check_pal- check the char recursively
+ * @s: string
+ * @i: iterator
+ * @len: length
+ * Return: int
+ */
+int check_pal(char *s, int i, int len)
+{
+	if (*(s + i) != *(s + len - 1))
+		return (0);
+	if (i >= len)
+		return (1);
+	return  (check_pal(s, i + 1, len - 1));
 }
