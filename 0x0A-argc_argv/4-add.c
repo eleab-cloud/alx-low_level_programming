@@ -10,27 +10,29 @@ int isnumber(char *c);
  */
 int main(int argc, char *argv[])
 {
-	int result = 0;
+	int count;
 
-	int i;
+	int sti;
 
-	if (argc == 1)
+	int sum = 0;
+
+	count = 1;
+
+	while (count < argc)
 	{
-		printf("0\n");
-	}
-	for (i = 1; i < argc; i++)
-	{
-		if (isnumber(argv[i]))
+		if (isnumber(argv[count]))
 		{
-			result = result + atoi(argv[i]);
+			sti = atoi(argv[count]);
+			sum = sum + sti;
 		}
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
+		count++;
 	}
-	printf("%d\n", result);
+	printf("%d\n", sum);
 	return (0);
 }
 /**
@@ -40,18 +42,17 @@ int main(int argc, char *argv[])
  */
 int isnumber(char *c)
 {
-	int len = 0;
+	unsigned int len = 0;
 
 	int i;
 
-	while (*c != '\0')
-		len++;
-	for (i = 0; i < len; i++)
+	while (len < strlen(c))
 	{
-		if (!isdigit(c[i]))
+		if (!isdigit(c[count]))
 		{
 			return (0);
 		}
+		count++;
 	}
 	return (1);
 }
