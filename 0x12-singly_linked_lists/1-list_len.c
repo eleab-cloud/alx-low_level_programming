@@ -5,7 +5,7 @@
  * @h: pointer to a stracture list
  * Return: the nember of list elements
  */
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
 	size_t i = 0;
 
