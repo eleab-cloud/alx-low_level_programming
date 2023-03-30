@@ -1,7 +1,7 @@
 #include <stdio.h>
 void first(void)__attribute__((constructor));
 /**
- * fist- print befor main func
+ * first- print befor main func
  * Return: nothing
  */
 void first(void)
