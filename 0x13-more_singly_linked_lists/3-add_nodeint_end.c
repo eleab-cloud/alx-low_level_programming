@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * add_nodeint_end
+ * add_nodeint_end- adds a node at the tail
  * @head: pointer to head of a struct node
  * @n: an element of a node
  * Return: pointer to the list head
