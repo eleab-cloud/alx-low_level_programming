@@ -2,16 +2,13 @@
 #include <stdio.h>
 /**
  * add_nodeint- add a node at head of list
- * head: pointer to first node
+ * @head: pointer to first node
  * @n: value of the node
  * Return: the pointer to new hed node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *newhead;
-
-	if (head == NULL)
-		return (NULL);
 
 	newhead = malloc(sizeof(listint_t));
 
