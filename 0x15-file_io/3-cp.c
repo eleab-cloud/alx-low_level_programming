@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 	}
 	buf = cr_buf(argv[2]);
 	from = open(argv[1], O_RDONLY);
-	r = read(f, buf, 1024);
+	r = read(from, buf, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	do
 	{
@@ -76,11 +76,11 @@ int main(int argc, char *argv[])
                         free(buf);
                         exit(99);
 		}
-		r = read(f, buf, 1024);
+		r = read(from, buf, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (r > 0);
 	free(buf);
-	close_file(f);
+	close_file(from);
 	close_file(to);
 	return (0);
 }
