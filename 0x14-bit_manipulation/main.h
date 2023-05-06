@@ -1,5 +1,5 @@
 #ifndef MAIN_H
-#define MAIN-H
+#define MAIN_H
 int get_endianness(void);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int clear_bit(unsigned long int *n, unsigned int index);
